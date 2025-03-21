@@ -1,0 +1,54 @@
+body {
+    background-color: #800020;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #4b0010;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.producto-detalle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.producto-detalle img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.info {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.btn {
+    background-color: #f32f2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #36c013;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4b0010;
+}

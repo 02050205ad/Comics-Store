@@ -1,0 +1,98 @@
+body {
+    background-color:rgb(150, 65, 65);
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    
+}
+
+body {
+    background-image: url('https://i.pinimg.com/originals/5a/6b/f6/5a6bf6b8d1392faff019515e46828e34.gif');
+    background-size: cover;  /* Ajusta la imagen para que cubra toda la pantalla */
+    background-repeat: no-repeat;  /* Evita que la imagen se repita */
+    background-position: center;  /* Centra la imagen */
+    background-attachment: fixed;  /* Mantiene el fondo fijo al hacer scroll */
+}
+header {
+    background-image: url('https://i.pinimg.com/originals/22/6e/e4/226ee45af82528895e1eb81d23d1ed2a.gif');
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Ajuste para que sea similar al de la imagen proporcionada */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes rainbow {
+    0% { color: red; }
+    16% { color: orange; }
+    32% { color: yellow; }
+    48% { color: green; }
+    64% { color: blue; }
+    80% { color: indigo; }
+    100% { color: violet; }
+}
+
+.Oferta {
+    font-size: 1rem;
+    font-weight: bold;
+    animation: rainbow 2s infinite linear;
+}
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.producto {
+    text-align: center;
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.producto img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s, content 0.3s;
+}
+
+.producto img:hover {
+    transform: scale(1.1);
+    content: attr(data-hover);
+}
+
+.btn {
+    background-color: #f12a2a;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #90e277;
+}
+.header {
+    color: #e9810b;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: matrix3d(3,3,5,2);
+    size: 70px;
+    border-radius: 300px;
+    border-color: aliceblue;
+}
+
+.title2 {
+    color: rgb(243, 235, 235);
+    text-align: center;
+    transition: step-start;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #9c0000;
+}

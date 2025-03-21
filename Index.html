@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal Comic Store</title>
+    <link rel="stylesheet" href="Eternal comic store.css">
+    <link rel="icon" type="logo" href="Logos/Logo.png">
+    <audio id="musica" loop>
+        <source src="Audios/Rivals Til the End (Chrissy Costanza Version) (From MARVEL Rivals Galactic Tunes).mp3" type="audio/mpeg">
+    </audio>
+    
+    <script>
+        document.addEventListener("click", function() {
+            let audio = document.getElementById("musica");
+            audio.volume = 1.0; // Volumen al máximo (1.0 es el valor máximo)
+            audio.play();
+        }, { once: true }); // Solo se activa una vez
+    </script>
+</head>
+<body>
+    <header class="Encabezado">
+        <h1>Eternal Comic Store</h1>
+        <div>
+            <a href="Marvel comics.html">
+                <button class="btn">Marvel Editorial</button>
+                <a href="DC comic.html">
+                    <button class="btn">DC Editorial</button>
+        </div>
+    </header>
+    <main>
+        <h2>Elije Tu Editorial</h2>
+        <div class="editoriales">
+            <a href="Marvel comics.html" class="editorial">
+                <img src="https://i.pinimg.com/736x/fd/82/22/fd82220c0777b14a7767be443d0902ae.jpg" alt="Marvel Comics">
+                <h1>Marvel Comics</h1>
+            </a>
+            <a href="DC comic.html" class="editorial">
+                <img src="https://i.pinimg.com/736x/c2/c7/d6/c2c7d64ce58f78448fa40bf158b9818a.jpg" alt="DC Comics">
+                <h1>DC Comics</h1>
+            </a>
+        </div>
+    </main>
+    <section>
+        <div class="Info ofc">
+            <h1>Patrocinadores Oficiales</h1>
+           
+        </div>
+        <section>
+            <div class="Info img">
+                <img src="Logos/1.png" alt="">
+                <img src="Logos/2.png" alt="">
+                <img src="Logos/3.png" alt="">
+                <img src="Logos/4.png" alt="">
+                <img src="Logos/5.png" alt="">
+                <img src="Logos/6.png" alt="">
+            </div>
+        </section>
+    </section>
+  
+</body>
+</html>

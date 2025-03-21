@@ -1,0 +1,113 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #197bbd, #0056b3);
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 20px;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de productos */
+.producto {
+    display: flex;
+    flex-direction: row;  /* Diseño horizontal */
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgb(185, 104, 66);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 20px;  /* Espacio entre imagen y contenido */
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del producto */
+.producto img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover img {
+    transform: scale(1.05);
+}
+
+/* Contenedor de detalles */
+.detalles {
+    text-align: left;
+    flex: 1;
+}
+
+/* Precio */
+.precio {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #e63946;
+    margin: 10px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón */
+.btn {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(255, 126, 95, 0.3);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #e63946, #ff7e5f);
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 126, 95, 0.5);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Diseño responsivo */
+@media (max-width: 600px) {
+    .producto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .producto img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-image: url('https://i.pinimg.com/originals/9c/49/3e/9c493e8d4b043478423327a550f7c06c.gif');
+    background-size: cover;
+    background-position: center;
+    height: 150px; /* Ajuste para que sea similar al de la imagen proporcionada */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-image: url('https://i.makeagif.com/media/3-21-2023/cQ6Vqd.gif');
+    background-size: cover;  /* Ajusta la imagen para que cubra toda la pantalla */
+    background-repeat: no-repeat;  /* Evita que la imagen se repita */
+    background-position: center;  /* Centra la imagen */
+    background-attachment: fixed;  /* Mantiene el fondo fijo al hacer scroll */
+}
+    
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+  
+}
+
+h2 {
+    color: beige;
+    transition: 100ms;
+    overflow-x: inherit;
+}
+.editoriales {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.editorial {
+    text-decoration: none;
+    color: rgb(226, 226, 226);
+    position: relative;
+}
+
+.editorial img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.editorial img:hover {
+    transform: scale(1.1);
+}
+
+.editorial h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.Info img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s, content 0.3s;
+}
+
+.Info img:hover {
+    transform: scale(1.1);
+    content: attr(data-hover);
+}
+
+.btn {
+    background-color: #f32f2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #ec882a;
+}
